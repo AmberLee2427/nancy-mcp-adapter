@@ -17,16 +17,12 @@ def register_tools():
             parameters={
                 "type": "object",
                 "properties": {
-                    "name": {
-                        "type": "string",
-                        "description": "Name to greet",
-                        "default": "World"
-                    }
+                    "name": {"type": "string", "description": "Name to greet", "default": "World"}
                 },
-                "required": []
+                "required": [],
             },
             handler=hello,
             # slash_command: Optional command users can type directly (e.g., "/hello")
-            slash_command=None
+            slash_command=None,
         )
     ]
